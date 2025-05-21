@@ -1,0 +1,3 @@
+layout tall
+launch tmux attach -t belousov
+

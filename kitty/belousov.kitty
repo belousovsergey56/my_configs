@@ -1,0 +1,7 @@
+layout tall
+launch --title "MAIN"
+
+layout tall
+new_tab HTOP
+cd ~
+launch htop
