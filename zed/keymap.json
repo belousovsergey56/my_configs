@@ -1,0 +1,14 @@
+[
+  {
+    "bindings": {
+      "alt-f12": "workspace::OpenTerminal",
+      "alt-f12": "workspace::ToggleBottomDock",
+      "alt-1": "project_panel::ToggleFocus",
+      "alt-1": "workspace::ToggleRightDock",
+      "ctrl-shift-down": "editor::MoveLineDown",
+      "ctrl-shift-up": "editor::MoveLineUp",
+      "ctrl-d": "editor::DuplicateLineDown",
+      "shift-f9": "task::Rerun"
+    }
+  }
+]
