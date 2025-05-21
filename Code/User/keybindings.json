@@ -1,0 +1,17 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+alt+l",
+        "command": "pythonIndent.newlineAndIndent",
+        "when": "editorTextFocus && !editorHasMultipleSelections && !suggestWidgetVisible && editorLangId == 'python' && neovim.mode == 'insert'"
+    },
+    {
+        "key": "enter",
+        "command": "-pythonIndent.newlineAndIndent",
+        "when": "editorTextFocus && !editorHasMultipleSelections && !suggestWidgetVisible && editorLangId == 'python' && neovim.mode == 'insert'"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "ruff.executeFormat"
+    }
+]
