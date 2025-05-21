@@ -1,0 +1,7 @@
+ngrok/*
+syncthing/*
+balena*
+.oh-my*
+.bashrc
+.zshrc
+.gitconfig
