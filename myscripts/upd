@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+sudo dnf5 check-update
+sudo dnf5 update && sudo dnf5 upgrade
+sudo dnf5 autoremove
+

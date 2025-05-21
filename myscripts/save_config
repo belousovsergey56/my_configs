@@ -1,0 +1,15 @@
+#!/bin/bash
+#!/bin/zsh
+
+cp -r ~/.config/autostart ~/mnt/configs
+cp -r ~/.config/kitty ~/mnt/configs
+cp -r ~/.config/nvim ~/mnt/configs
+cp -r ~/.config/syncthing ~/mnt/configs
+cp -r ~/.config/wofi ~/mnt/configs
+cp -r ~/.local/myscripts ~/mnt/configs
+
+
+cp ~/.gitconfig ~/mnt/configs
+cp ~/.zshrc ~/mnt/configs
+cp ~/.bashrc ~/mnt/configs
+
