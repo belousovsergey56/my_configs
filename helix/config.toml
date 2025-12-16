@@ -1,0 +1,40 @@
+theme = "sonokai"
+
+[editor]
+line-number = "relative"
+mouse = false
+rulers = [80]
+auto-completion = true
+# Минимальная длина слова для триггера автодополнения (по умолчанию 2)
+completion-trigger-len = 3
+# Задержка перед показом автодополнения в мс (по умолчанию 250)
+completion-timeout = 250
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+
+[keys.normal]
+"C-/" = "toggle_comments"
+"C-d" = ["extend_line_below", "yank", "paste_after"]
+"D" = ["extend_line_below", "delete_selection_noyank"]
+C-S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+
+[keys.select]
+"C-/" = "toggle_comments"
+C-S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+
+[keys.insert]
+"C-/" = "toggle_comments"
+C-S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]

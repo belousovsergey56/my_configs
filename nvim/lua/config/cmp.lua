@@ -26,7 +26,15 @@ cmp.setup({
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Обновите настройки LSP серверов (например, pyright):
-require('lspconfig').pyright.setup({
-  capabilities = capabilities,
+-- require('lspconfig').pyright.setup({
+--   capabilities = capabilities,
   -- остальные настройки...
-})
+-- })
+--
+
+-- Определяем конфигурацию для pyright 
+vim.lsp.config.pyright = {
+	capabilities = capabilities,
+}
+
+vim.lsp.enable('pyright')

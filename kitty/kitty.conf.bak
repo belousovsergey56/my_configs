@@ -1049,11 +1049,12 @@ tab_powerline_style slanted
 
 #: Template to use for active tabs. If not specified falls back to
 #: tab_title_template.
-# active_tab_foreground   #000
-# active_tab_background   #eee
+
+active_tab_foreground   #000
+active_tab_background   #eee
 active_tab_font_style   bold-italic
-# inactive_tab_foreground #444
-# inactive_tab_background #999
+inactive_tab_foreground #444
+inactive_tab_background #999
 inactive_tab_font_style normal
 
 #: Tab bar colors and styles.
@@ -1075,7 +1076,7 @@ inactive_tab_font_style normal
 #: Color scheme {{{
 
 # foreground #dddddd
-# background #202935
+background #202935
 
 #: The foreground and background colors.
 
@@ -1174,41 +1175,51 @@ inactive_tab_font_style normal
 #: The 256 terminal colors. There are 8 basic colors, each color has a
 #: dull and bright version, for the first 16 colors. You can set the
 #: remaining 240 colors as color16 to color255.
-# color0 #000000
-# color8 #313131
+
+color0 #000000
+color8 #313131
 
 #: black
-# color1 #ff615a
-# color9 #f58c80
+
+color1 #ff615a
+color9 #f58c80
 
 #: red
-# color2  #b1e969
-# color10 #ddf88f
+
+color2  #b1e969
+color10 #ddf88f
 
 #: green
-# color3  #ebd99c
-# color11 #eee5b2
+
+color3  #ebd99c
+color11 #eee5b2
 
 #: yellow
-# color4  #5da9f6
-# color12 #a5c7ff
+
+color4  #5da9f6
+color12 #a5c7ff
 
 #: blue
-# color5  #e86aff
-# color13 #ddaaff
+
+color5  #e86aff
+color13 #ddaaff
 
 #: magenta
-# color6  #82fff7
-# color14 #b7fff9
+
+color6  #82fff7
+color14 #b7fff9
 
 #: cyan
-# color7  #dedacf
-# color15 #FFFFFF
+
+color7  #dedacf
+color15 #FFFFFF
 
 #: white
-# color8 #32CD32
+
+color8 #32CD32
 #: limeGreen
-# color9 #F08080
+
+color9 #F08080
 #: lightCoral
 
 # mark1_foreground black
@@ -2389,9 +2400,3 @@ map ctrl+t new_tab
 #session_name: belousov.session
 #restore_session_on_startup: yes
 
-
-
-# BEGIN_KITTY_THEME
-# Sonokai Sushia
-include current-theme.conf
-# END_KITTY_THEME

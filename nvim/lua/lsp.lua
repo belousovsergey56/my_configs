@@ -37,16 +37,34 @@ local on_attach = function(client, bufnr)
 end
 
 -- Конфигурация для pyright
-lspconfig.pyright.setup({
-  on_attach = on_attach,
-  capabilities = require('cmp_nvim_lsp').default_capabilities(),
-  settings = {
-    python = {
-      analysis = {
-        typeCheckingMode = "basic",
-        autoSearchPaths = true,
-        useLibraryCodeForTypes = true
-      }
-    }
-  }
-})
+--lspconfig.pyright.setup({
+--  on_attach = on_attach,
+--  capabilities = require('cmp_nvim_lsp').default_capabilities(),
+--  settings = {
+--    python = {
+--      analysis = {
+--        typeCheckingMode = "basic",
+--        autoSearchPaths = true,
+--        useLibraryCodeForTypes = true
+--      }
+--    }
+--  }
+--})
+
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+vim.lsp.config.pyright = {
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		python = {
+			analysis = {
+				typeCheckingMode = "basic",
+				autoSearchPaths = true,
+				useLibraryCodeForTypes = true,
+			},
+		},
+	},
+}
+
+vim.lsp.enable('pyright')
