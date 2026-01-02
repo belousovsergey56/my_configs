@@ -6,9 +6,9 @@ mouse = false
 rulers = [80]
 auto-completion = true
 # Минимальная длина слова для триггера автодополнения (по умолчанию 2)
-completion-trigger-len = 3
+completion-trigger-len = 2
 # Задержка перед показом автодополнения в мс (по умолчанию 250)
-completion-timeout = 250
+completion-timeout = 150
 
 [editor.cursor-shape]
 insert = "bar"
