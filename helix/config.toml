@@ -28,6 +28,7 @@ after-delay.enable = true
 "D" = ["extend_line_below", "delete_selection_noyank"]
 C-S-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 C-S-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+A-a = "no_op"
 
 [keys.select]
 "C-/" = "toggle_comments"
