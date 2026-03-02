@@ -3,6 +3,5 @@ syncthing/*
 balena*
 .oh-my*
 .bashrc
-.zshrc
 .gitconfig
 .ssh
