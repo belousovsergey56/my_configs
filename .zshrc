@@ -84,6 +84,7 @@ alias gd="git diff"
 alias ga="git add"
 alias gc="git commit -m"
 alias -g G='| rg'
+alias ..="cd .."
 
 export PATH=$PATH:$HOME/.local/bin
 export EDITOR=/usr/bin/hx
@@ -142,10 +143,10 @@ sync_note() {
 
 # Backup конфиг файлов
 save_config() {
-  cp -r ~/.config/{autostart,kitty,nvim,wofi,helix,zellij} ~/mnt/configs 2>/dev/null
-  cp ~/.{gitconfig,zshrc,bashrc} ~/mnt/configs 2>/dev/null
-  cp ~/.tmux.conf ~/mnt/configs 2>/dev/null
-  cp -r ~/.ssh ~/mnt/configs 2>/dev/null
+  cp -r ~/.config/{autostart,kitty,wofi,helix} ~/mnt/configs 2>/dev/null
+  cp ~/.{gitconfig,zshrc,tmux.conf} ~/mnt/configs 2>/dev/null
+  cp -r ~/.{ssh,zsh} ~/mnt/configs 2>/dev/null
+  cp -r ~/.local/myscripts ~/mnt/configs 2>/dev/null
   echo "Configs backed up"
 }
 ### Вывод списка скриптов + описание

@@ -19,8 +19,7 @@ select = "underline"
 hidden = false
 
 [editor.auto-save]
-focus-lost = true
-after-delay.enable = true
+auto-save = false
 
 [keys.normal]
 "C-/" = "toggle_comments"

@@ -34,6 +34,25 @@ command = "pylsp"
 command = "jsonnet-language-server"
 args= ["-t", "--lint"]
 
+# cargo install lsp-ai
+[language-server.lsp-ai]
+command = "lsp-ai"
+
+# pip install aider-install
+# aider-install
+# curl -fsSL https://ollama.com/install.sh | sh
+# ollama pull codellama
+# ollama pull deepseek-coder:6.7b
+# [language-server.lsp-ai.config.models.model1]
+# type = "ollama"
+# model = "deepseek-coder:6.7b"
+
+# [language-server.lsp-ai.config.completion]
+# model = "model1"
+
+# [language-server.ollama]
+# command = "ollama"
+# args = ["--model", "deepseek-coder:6.7b"]
 # --- Ассоциации языков с серверами и форматтерами ---
 
 [[language]]
