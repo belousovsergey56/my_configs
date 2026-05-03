@@ -90,6 +90,7 @@ export PATH=$PATH:$HOME/.local/bin
 export EDITOR=/usr/bin/hx
 export PATH=$PATH:$HOME/.cargo/bin
 export UV_LINK_MODE=copy
+export PATH=$HOME/.npm-global/bin:$PATH
 
 
 alias hh=hstr                    # hh to be alias for hstr

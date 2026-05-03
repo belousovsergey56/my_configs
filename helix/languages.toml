@@ -35,6 +35,7 @@ command = "pylsp"
 command = "jsonnet-language-server"
 args= ["-t", "--lint"]
 
+# rustup component add rust-analyzer clippy
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
