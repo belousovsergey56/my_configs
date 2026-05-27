@@ -24,23 +24,6 @@ step_fstab() {
     echo "UUID=209472BF9472974E /home/belousov/win ntfs-3g uid=1000,gid=1000,dmask=0002,fmask=0111,locale=ru_RU.UTF-8 0 0"
     echo "UUID=09d31e15-2dfc-4dbb-b9db-dbfb70fc0c33 /home/belousov/mnt ext4 defaults 0 1"
 
-    # local FSTAB_LINES=(
-    #     "UUID=209472BF9472974E /home/belousov/win ntfs-3g uid=1000,gid=1000,dmask=0002,fmask=0111,locale=ru_RU.UTF-8 0 0"
-    #     "UUID=09d31e15-2dfc-4dbb-b9db-dbfb70fc0c33 /home/belousov/mnt ext4 defaults 0 1"
-    # )
-    
-    # sudo mkdir -p /home/belousov/win /home/belousov/mnt
-    
-    # for line in "${FSTAB_LINES[@]}"; do
-    #     local uuid=$(echo $line | awk '{print $1}')
-    #     if grep -q "$uuid" /etc/fstab; then
-    #         echo "Запись $uuid уже есть в fstab."
-    #     else
-    #         echo "$line" | sudo tee -a /etc/fstab > /dev/null
-    #         echo "Добавлено: $uuid"
-    #     fi
-    # done
-    # sudo mount -a
 }
 
 step_dnf_speed() {
@@ -63,7 +46,7 @@ step_install_apps() {
     sudo dnf5 check-update
     sudo dnf5 update -y
     
-    local apps=(cargo helix kitty htop wofi translate-shell fzf breeze-cursor-theme zsh git util-linux-user fd-find duf bat eza hstr fastfetch tldr python3-pip gnome-tweaks)
+    local apps=(cargo helix kitty tmux htop wofi translate-shell fzf breeze-cursor-theme zsh git util-linux-user fd-find duf bat eza hstr fastfetch tldr python3-pip gnome-tweaks)
 
     echo "Устанавливаем программы..."
     for app in "${apps[@]}"; do
@@ -144,14 +127,6 @@ show_hotkeys() {
     echo "   chsh -s \$(which zsh)"
     echo "2. Перезагрузись или выполни source ~/.zshrc"
     echo ""
-
-    # echo "3. Для helix/neovim: зайди и выполни :PlugInstall"
-    # echo "F12 -> Tilix | Super+F12 -> Settings"
-    # echo "Super+E -> Files | Caps Lock -> Layout"
-    # echo "Super+Space -> Wofi"
-    # echo "Wofi cmd: wofi --show drun"
-    # echo "Extensions: Install 'Just Perfection'"
-    # echo "NVIM: run ':PlugInstall'"
     echo "##############################################\e[0m"
 }
 
