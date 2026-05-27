@@ -91,7 +91,8 @@ export EDITOR=/usr/bin/hx
 export PATH=$PATH:$HOME/.cargo/bin
 export UV_LINK_MODE=copy
 export PATH=$HOME/.npm-global/bin:$PATH
-
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
 
 alias hh=hstr                    # hh to be alias for hstr
 setopt histignorespace           # skip cmds w/ leading space from history
