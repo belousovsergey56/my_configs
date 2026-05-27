@@ -53,6 +53,18 @@ inlayHints.typeHints.hideClosureInitialization = false
 files.watcher = "server"
 
 # --- Ассоциации языков с серверами и форматтерами ---
+# go install golang.org/x/tools/cmd/goimports@latest
+# go install golang.org/x/tools/gopls@latest
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+language-servers = ["gopls"]
+
+[language-server.gopls]
+command = "gopls"
+# Опционально: настройка специфических возможностей gopls
+config = { "ui.diagnostic.staticcheck" = true, "hints" = { "assignVariableType" = true, "compositeLiteralFields" = true } }
 
 [[language]]
 name = "rust"
