@@ -85,6 +85,7 @@ alias ga="git add"
 alias gc="git commit -m"
 alias -g G='| rg'
 alias ..="cd .."
+alias pgdb="pgcli -h localhost -U belousov -d belousovdb"
 
 export PATH=$PATH:$HOME/.local/bin
 export EDITOR=/usr/bin/hx
