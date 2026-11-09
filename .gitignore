@@ -5,3 +5,7 @@ balena*
 .bashrc
 .gitconfig
 .ssh
+
+.zsh/zsh-autosuggestions
+.zsh/zsh-syntax-highlighting
+helix/runtime/*
