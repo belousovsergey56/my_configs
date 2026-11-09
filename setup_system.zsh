@@ -91,6 +91,7 @@ step_flatpak() {
         io.dbeaver.DBeaverCommunity
         md.obsidian.Obsidian
         org.keepassxc.KeePassXC
+        com.nextcloud.desktopclient.nextcloud
     )
     for app in "${fp_apps[@]}"; do
         flatpak install flathub $app -y
